@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title>Welcome</title>
+</head>
+<body>
+  <form action = "/" method = "POST">
+    {% csrf_token %}
+    <h1>Random Word</h1>
+    {{request.session.attempt}}
+    <input type="submit" id = "clickbox" value="create"/>
+  </form>
+</body>
+</html>
